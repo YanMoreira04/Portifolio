@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sacale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    
+
+
+    <title>YAN MOREIRA</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header-container">
+            <a href="#" class="logo">
+                <img src="./logo_3.png" alt="logo">
+            </a>
+            <!-- # e o ./img do local -->
+            <nav class="navbar">
+                <a href="#">Inicio</a>
+                <a href="#about">Sobre</a>
+                <a href="#projects">Projetos</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#contate-form">Contato</a>
+                
+            </nav>
+
+            <a href="./assets/Curriculo_Eng_Yan.pdf" download class="btn-cv">Download CV</a>
+
+        </section>
+    </header>
+
+    <div class="home-conteiner">
+        <section id="home">
+            <div class="content">
+                <p> Ola visitante!</p>
+                <h1>Meu nome e Yan</h1>
+                <p>Desenvolvedor Back-end</p>
+                <a href="#" rel="next" target="_self" class="btn">Linkedln</a>
+                <a href="#" rel="next" target="_self" class="btn">Email</a>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <section class="about" id="about">
+        <h2 class="title" data-aos="fade-up">Sobre Mim</h2>
+        <div class="row">
+            <div class="container-imagem"  data-aos="fade-right">
+                <img src="./eu_dev_Alt-550.png" alt="sobre">
+            </div>
+            <div class="content">
+                <h2 data-aos="fade-up">Conheça mais sobre mim</h2>
+                <p data-aos="fade-left">Sou Desenvolvedor de Software com foco em desenvolvimento Back-end mas tambem tenho conhecimento em
+                    Front-end, incluindo frameworks como React.</p>
+                <p data-aos="fade-left">Sou movido por desafios e aprendizado contínuo. Busco contribuir com soluções eficientes, código bem
+                    estruturado e mentalidade colaborativa, sempre alinhado às boas práticas e metodologias ágeis.</p>
+                <p data-aos="fade-left">Tenho experiência prática na construção de sistemas com integração em bancos de dados relacionais e
+                    desenvolvimento de aplicações web responsivas. Trabalho com tecnologias como C++, Java, PHP, Python,
+                    JavaScript, React, Node.js, SQL, MySQL e MongoDB</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img width="50" height="50" src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000"
+                alt="java" />
+            <img width="100" height="100" src="https://img.icons8.com/?size=100&id=UGYn5TapNioV&format=png&color=000000"
+                alt="php" />
+            <img width="50" height="50" src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+                alt="python" />
+            <img width="50" height="50" src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+                alt="JavaScript" />
+            <img width="50" height="50" src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
+                alt="html"/>
+            <img width="50" height="50" src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"
+                alt="css"  />
+            <img width="50" height="50" src="https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000"
+                alt="sql" />
+        </div>
+
+    </section>
+    <!-- Escrever o comentario de cada projeto -->
+    <section class="projects" id="projects">
+        <h2 class="title" data-aos="fade-up">Meus Projetos</h2>
+        <div class="box-container">
+            <div class="box" data-aos="fade-right">
+                <img src="./Gerenciamento_450.png" alt="item-1">
+                <h2>Sistema de Gerencimento</h2>
+                <p>Projeto desenvolvido em Java, com design simples e intuitivo, integração com banco de dados e API
+                    REST, garantindo organização, performance e comunicação eficiente entre aplicação e servidor.</p>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+            <div class="box" data-aos="fade-right">
+                <img src="./Clinica_450.png" alt="item-2">
+                <h2>Sistema de Consultorio</h2>
+                <p>Sistema desenvolvido para gestao de consultório odontológico, com foco em organização e eficiência no
+                    atendimento. Projeto na linguagem Java e integraçao com banco de dados MySQL.</p>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+            <div class="box"data-aos="fade-left">
+                <img src="./Backlog_450.png" alt="item-4">
+                <h2>Backlog de Obra</h2>
+                <p>Sistema de gestao de obras, objetivo de transformar o acompanhamento da obra, trazendo eficiencia
+                    para o dia a dia de quem precisa controlar orçamentos e atividades. Python, Flask, Html, Css e
+                    Bootstrap.</p>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <img src="./Buffet_450.png" alt="item-3">
+                <h2>Site de Empresa de Buffet</h2>
+                <p>Site institucional responsivo para empresa de buffet, pensado para oferecer boa experiência ao
+                    usuário. Desenvolvido em HTMl, CSS e JavaScript.</p>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+            <div class="box">
+                <img src="./ProcessoSeletivo_N8N.png" alt="item-5">
+                <h2>Automaçao com N8N</h2>
+                <p>Automatizando processos seletivos, com disparo automatico, busca de candidatos via planilha, filtra
+                    aprovados e reprovados e envia notificaçao personalizada para cada grupo.
+                </p>
+                <a href="#" class="btn">Linkln</a>
+            </div>
+            <div class="box">
+                <img src="./Cotaçao_N8N.png" alt="item-6">
+                <h2>Automaçao com N8N</h2>
+                <p>Fluxo no n8n que monitora moeda, consulta cotação, converte dólar para real, aplica regras de decisão
+                    e salva automaticamente os dados em planilha para análise financeira estratégica.</p>
+                <a href="#" class="btn">Linkln</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <h2 class="title" data-aos="fade-up">Habilidades</h2>
+        <div class="box-container" >
+            <div class="box" data-aos="fade-up">
+                <h3>Comunicaçao</h3>
+                <p>Capacidade de expressar ideias de forma clara e concisa, facilitando a colaboraçao com colegas de
+                    equipe e clientes.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <h3>Trabalho em equipe</h3>
+                <p>Habilidade de trabalhar de forma colaborativa em equipe, contribuindo com suas habilidades e ideias
+                    para alcançar objetivos comuns.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <h3>Proatividade</h3>
+                <p>Iniciativa para buscar novas oportunidades, assumir responsabilidades e agir antecipadamente para
+                    evitar problemas.</p>
+            </div>
+
+            <div class="box"data-aos="fade-up">
+                <h3>Resoluçao de problemas</h3>
+                <p>Capacidade de identificar, analisar e resolver problemas de forma eficaz, buscando soluçoes criativas
+                    e inovadoras.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contate-form" id="contate-form">
+        <h2 class="Contate-me" data-aos="fade-up">Contate-me </h2>
+        <Form action="#">
+            <div class="input-box">
+                <input type="Text" name="Nome" placeholder="Nome:" data-aos="fade-up">
+                <input type="number" name="telefone" placeholder="Telefone ou Celular:" data-aos="fade-up">
+                <textarea name="Comentario" id="" Cols="30" rows="10" placeholder="Adicione um comentario:"data-aos="fade-up"></textarea>
+            </div>
+            <div>
+                <button class="btn-1" >ENVIAR</button>
+            </div>
+        </Form>
+    </section>
+
+</body>
+
+
+</html>

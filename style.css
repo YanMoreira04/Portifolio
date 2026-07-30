@@ -1,0 +1,359 @@
+:root {
+    --main-color:#0d1b2a;
+    --black: #13131a;
+    --bg:#4f4f4f;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+section{
+    padding: 1rem 0rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    height: 110px;
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+}
+
+.header img {
+    height: 150px;
+    margin-left: -9rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    margin: 0 1rem;
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: #ff8c00;
+    border-bottom: 0.1rem solid #ff8c00;
+    padding-bottom: 0.1rem;
+    font-size: 2.3rem;
+}
+
+/* BOTÃO NA DIREITA */
+.btn-cv{
+    background: #ff8c00;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+
+
+.icons{
+    display: flex;
+    justify-content: center;   /* Centraliza horizontalmente */
+    align-items: center;       /* Alinha verticalmente */
+    gap: 4rem;                 /* Espaço entre ícones */
+    margin: 4rem 0;
+    flex-wrap: wrap; 
+}
+
+.icons img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons img:hover{
+    transform: scale(1.15);
+}
+
+.btn{
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+
+.home-conteiner{
+    background: url("./bg_filtro.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-conteiner section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.content{
+    max-width: 60rem;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 7rem;
+}
+
+.content p{
+    color: #ff8c00;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title{
+   font-size: 5rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    border-top: 2px ;
+    padding-top: 3.5rem;
+}
+
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    gap: 2rem;  
+
+    padding: 2rem 4rem;
+    width: 90%;
+}
+
+.about .row .content {
+    padding: 2rem;
+}
+
+.about .row .content h2{
+    font-size: 4rem;
+    color: #ff8c00;
+    margin-bottom: 2rem;
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/*Carrossel abaixo*/
+
+.projects {
+    background: var(--bg);
+    padding: 5rem 0; /* aumenta espaço geral */
+}
+
+.projects .title {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+/* Container vira carrossel horizontal */
+.projects .box-container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 2rem;
+}
+
+/* Remove barra feia (Chrome) */
+.projects .box-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects .box-container::-webkit-scrollbar-thumb {
+    background: #0d1b2a;
+    border-radius: 10px;
+}
+
+/* Card */
+.projects .box {
+    min-width: 420px;
+    max-width: 420px;
+    height: 500px;
+    background: var(--main-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 0 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover elegante */
+.projects .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Imagem em cima */
+.projects .box img {
+    width: 100%;
+    height: 220px; /* controla altura visual */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Título */
+.projects .box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff8c00;
+}
+
+/* Texto */
+.projects .box p {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+/* Botão */
+.projects .box .btn {
+ 
+    display: inline-block;
+}
+
+.projects .box .btn:hover{
+     color: #ff8c00;
+    border-bottom: 0.1rem solid #ff8c00;
+    padding-bottom: 0.7rem;
+}
+
+.skills .box-container .box{
+    background-color: var(--main-color);
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.skills .box-container .box p{
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.skills .box-container .box h3{
+    color: #ff8c00;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/*abaixo: img do review, caso quero colocar uma imagem*/
+
+.skills .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+/* Formulario abaixo*/
+
+.contate-form h2{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+}
+
+.contate-form form{
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contate-form form .input-box input, .contate-form form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 18px;
+    color: black;
+    background: #fff;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.btn-1{
+    padding: 15px 28px;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-top: 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: var(--main-color);
+    align-items: center;
+    flex-direction: column;
+}
+
+/*animaçao scroll*/
+
